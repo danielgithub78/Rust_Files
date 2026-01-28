@@ -22,7 +22,7 @@ fn main() {
         estado_civil: 'S',
     };
 
-    if persona1.nombre == "Juan" {
+    if persona1.nombre == "Pepe" {
         println!("Hola {}", persona1.nombre);
     }
 
