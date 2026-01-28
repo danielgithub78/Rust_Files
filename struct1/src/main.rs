@@ -28,4 +28,20 @@ fn main() {
 
     persona1.nombre = String::from("Esteban");
     println!("La Persona es: {:#?}", persona1);
+
+    let user1=Persona{
+        nombre: persona1.nombre.clone(),
+        apellido: persona1.apellido.clone(),
+        edad: persona1.edad,
+        telefono: String::from("5678432"),
+        domicilio: String::from("calle falsa 456"),
+        genero: persona1.genero,
+        estado_civil: persona1.estado_civil,
+    };
+
+    let mut user2=Persona{
+        domicilio: String::from("calle falsa 321"),
+        ..persona1
+    };
+    println!("La Persona es: {:#?}", user2);
 }
