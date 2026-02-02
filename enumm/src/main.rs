@@ -9,7 +9,7 @@ enum ComponentesPc {
     Ram(String),
 }
 
-fn Un_Componente(componente: ComponentesPc) {
+fn Informar_Componente(componente: ComponentesPc) {
     match componente {
         ComponentesPc::Teclado(marca)=> println!("es un Teclado: {}", marca),
         ComponentesPc::Ram(marca)=> println!("es una memoria Ram: {}", marca),
@@ -21,10 +21,10 @@ fn main() {
     let mon_1 = ComponentesPc::Monitor;
     let cpu_1 = ComponentesPc::Cpu;
     let teclado_1 = ComponentesPc::Teclado;
-    Un_Componente(mon_1);
-    Un_Componente(ComponentesPc::Teclado(String::from("Logitech 105 Teclas")));
-    Un_Componente(ComponentesPc::Ram(String::from("Kingstong 3200mhz 16 GB")));
-    Un_Componente(cpu_1);
+    Informar_Componente(mon_1);
+    Informar_Componente(ComponentesPc::Teclado(String::from("Logitech 105 Teclas")));
+    Informar_Componente(ComponentesPc::Ram(String::from("Kingstong 3200mhz 16 GB")));
+    Informar_Componente(cpu_1);
 
     //println!("Hello, world!");
 }
