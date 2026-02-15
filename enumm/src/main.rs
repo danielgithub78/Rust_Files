@@ -27,11 +27,19 @@ fn main() {
     Informar_Componente(ComponentesPc::Ram(String::from("Kingstong 3200mhz 16 GB")));
     Informar_Componente(cpu_1);
 
-    let valor: Option<u32>= Some(25);
+    let valor: Option<u32>= Some(15);
     match valor {
         Some(numero) => println!("El valor es: {}", numero),
         None=> println!("No hay numero"),
     }
 
     //println!("Hello, world!");
+
+    let valor2: Option<u8> = Some(10u8);
+        if let Some(num) = valor2 {
+            println!("El numero es: {}", num);
+        }   else {
+                println!("No hay numero");
+            }
+
 }
