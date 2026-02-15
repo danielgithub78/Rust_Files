@@ -41,5 +41,12 @@ fn main() {
         }   else {
                 println!("No hay numero");
             }
+    
+    let valor3: Option<u8> = None;
+        if let Some(num1) = valor3 {
+            println!("El numero v3 es: {}", num1);
+        }   else {
+                println!("No hay numero v3");
+            } 
 
 }
