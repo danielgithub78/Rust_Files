@@ -1,4 +1,4 @@
-pub fn consultar_stock(iten:&str)->bool{
-    println!("Verificando stock de {}...",iten);
+pub fn consultar_stock(item:&str)->bool{
+    println!("Verificando stock de {}...",item);
     true //supongamos que siempre hay stock
 }
